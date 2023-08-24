@@ -56,6 +56,10 @@
   color: #8b2845;
 }
 
+.board-box:hover{
+  border: 3px #8b2845;
+}
+
   
 @media screen and (max-width: 940px){
     #plus{

@@ -35,7 +35,7 @@
                     <tr>
                         <td>출발지</td>
                         <td><input type="text">
-                            <span class="material-icons">
+                            <span class="material-icons" id="place-icon">
                                 place
                             </span>
                         </td>
@@ -43,6 +43,14 @@
                     <tr>
                         <td>도착지</td>
                         <td><input type="text">
+                            <span class="material-icons">
+                                place
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>위험 지역 보기</td>
+                        <td>
                             <span class="material-icons">
                                 place
                             </span>
@@ -75,6 +83,19 @@
                 </table>
             </fieldset>
         </div><br>
+        <script>
+            const placeIcon = document.getElementById('place-icon');
+    
+            placeIcon.addEventListener('click', function() {
+                // 다음 지도 API 사용
+                const mapContainer = document.getElementById('map');
+                const mapOptions = {
+                    center: new daum.maps.LatLng(37.566826, 126.9786567), // 좌표 설정
+                    level: 3 // 지도 확대 레벨 설정
+                };
+                const map = new daum.maps.Map(mapContainer, mapOptions);
+            });
+        </script>
         <script>
             // 현재 시간을 가져오는 함수
             function getCurrentDateTime() {
