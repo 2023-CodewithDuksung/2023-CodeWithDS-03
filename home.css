@@ -6,7 +6,7 @@
     padding-bottom: 15px;
     font-weight: 700;
     font-size: 20px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     color: white;
@@ -143,10 +143,28 @@
 .choose {
     margin-top: 20px;
     list-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
 }
 
 .choose li {
     margin-bottom: 20px;
+    display:flex;
+}
+
+.alone{
+    list-style: none;
+    align-items: center;
+}
+
+ul{
+    text-align: center;
+    padding-right: 100px;
 }
 
 .navigation a {
@@ -184,7 +202,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 80vh; /* Adjust min-height for larger screens */
+        min-height: 100vh; /* Adjust min-height for larger screens */
     }
 
     .where {
@@ -217,3 +235,15 @@
     background-color: #747476a8;
     display: flex;
  }
+
+ @media screen and (min-width: 320px) {
+    .header {
+      /* 여기에 필요한 스타일을 적용하세요. 예: */
+      font-size: 18px;
+    }
+
+    .header a {
+        /* 여기에 필요한 스타일을 적용하세요. 예: */
+        margin: 0 10px;
+    }
+}

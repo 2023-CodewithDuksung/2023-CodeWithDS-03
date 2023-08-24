@@ -11,13 +11,11 @@
 }
 
 .edit-profile-form{
-  padding-top: 30%;
   padding-bottom: 30%;
   margin: 50px;
   margin-top: 20%;
-  margin-bottom: 20%;
   align-items: center;
-  height: inherit;
+  height: 70vh;
 }
 
 #edit{
