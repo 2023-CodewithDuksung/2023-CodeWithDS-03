@@ -232,7 +232,7 @@ bottom: 0; / 페이지 맨 아래에 위치시킵니다. */
     display: inline-block;
   }
   
-  .tooltip {
+.tooltip {
     visibility: hidden;
     background-color: #8b2845;
     color: #fff;
@@ -253,4 +253,5 @@ bottom: 0; / 페이지 맨 아래에 위치시킵니다. */
     visibility: visible;
     opacity: 1;
   }
+
 
