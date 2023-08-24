@@ -143,10 +143,24 @@
 .choose {
     margin-top: 20px;
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .choose li {
     margin-bottom: 20px;
+    display:flex;
+}
+
+.alone{
+    list-style: none;
+    align-items: center;
+}
+
+ul{
+    text-align: center;
+    padding-right: 100px;
 }
 
 .navigation a {
@@ -229,3 +243,5 @@
         margin: 0 10px;
     }
 }
+
+

@@ -11,7 +11,7 @@ function verifyEmailCode() {
 // 회원가입 버튼 클릭 시 이벤트
 function completeSignUp() {
     alert("가입되셨습니다!");
-    window.location.href = "welcome.html"; // login.html로 이동
+    window.location.href = "home.html"; // login.html로 이동
 }
 
 // 회원가입 버튼 활성화 여부 업데이트
@@ -22,7 +22,7 @@ function updateSignUpButtonStatus() {
     const confirmPasswordInput = document.getElementById("confirmPasswordInput");
     const signUpButton = document.getElementById("signUpButton");
 
-    if (nameInput.value && idInput&& passwordInput.value && confirmPasswordInput.value) {
+    if (idInput&& passwordInput.value && confirmPasswordInput.value) {
         signUpButton.disabled = false;
     } else {
         signUpButton.disabled = true;
