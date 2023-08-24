@@ -1,41 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./signup.css">
-    <script src="signup.js"></script>
-
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="stylesheet" href="./signup.css"><script src="signup.js"></script> <script src="email.js"></script>
     <title>회원가입 페이지</title>
-
-</head>
-
-
-
+    </head>
     <body style = "margin:0px">
         <div class="page-wrap">
         <div class="header">
             <div>
                 <a href="./home.html">홈</a>
-                <a href="./board.html">게시판</a>
-                <a href="./chat.html">채팅방</a>
-                <a href="./myPage.html">마이페이지</a>
+                <a href="board/board.html">게시판</a>
+                <a href="mypage/myPage.html">마이페이지</a>
             </div>
-        <!-- n -->
         </div>
-
-
+    
+    
         <div class="page">
             <div class="title">
                 회원가입
-            </div>
+            </div>   
     
             <div class="contentWrap">
-                <div class="inputTitle">이름</div>
+                <div class="inputTitle">이메일</div>
                 <div class="inputWrap">
-                    <input type="text" id="nameInput" class="input" placeholder="이름을 입력해 주세요.">
+                    <div class="tooltip-container">   
+                    <input type="text" id="emailInput" class="input" placeholder="이메일 주소를 입력해주세요.">
+                    
+                    <div class="tooltip">덕성여대 이메일로 작성해주세요!</div>
+                    </div>
+                    <button class="verificationButton" onclick="sendVerificationCode()">인증</button>
                 </div>
-    
+
+                <div class="verificationCodeSection">
+                    <input type="text" id="verificationCodeInput" class="textbox1" placeholder="인증 코드를 입력해주세요.">
+                    <button class="complete-button" onclick="verifyEmailCode()">완료</button>
+                </div>
+                  
                 <div style="margin-top: 13px;" class="inputTitle">아이디</div>
                 <div class="inputWrap">
                     <input type="text" id="idInput" class="input" placeholder="아이디를 입력해 주세요.">
@@ -51,11 +48,9 @@
                     <input type="password" id="confirmPasswordInput" class="input" placeholder="비밀번호를 다시 입력해 주세요.">
                 </div>
     
+    
                 <div class="signUp">
                     <button id="signUpButton" class="bottomButton" disabled onclick="completeSignUp()">가입하기</button>
                 </div>
             </div>
         </div>
-</div>
-</body>
-</html>

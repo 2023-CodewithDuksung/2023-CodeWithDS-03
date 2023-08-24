@@ -6,7 +6,7 @@
     padding-bottom: 15px;
     font-weight: 700;
     font-size: 20px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     color: white;
@@ -26,12 +26,12 @@
     margin: 0 15px;
 }
 
-.header a:hover{
+/* .header a:hover{
     text-decoration: none;
     color: white;
     margin: 0 15px;
     color: #503838;
-}
+} */
 
 .home-container {
     display: flex;
@@ -169,3 +169,5 @@
     }
     
 }
+
+
